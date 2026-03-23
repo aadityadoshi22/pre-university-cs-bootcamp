@@ -1,7 +1,9 @@
 # creation of a calculator
-x = float(input("What is x? "))
-y = float(input("What is y? "))
+def square(n):
+    return pow(n, 2)
 
-z = round(x/y, 2)
+def main():
+    x = int(input("what is x? "))
+    print("The square of x is:", square(x))
 
-print(z)
+main()
